@@ -18,6 +18,70 @@
     </nav>
     <hr>
   </header>
+
+  <main>
+    <section>
+      <h2>Place Your Book Order</h2>
+      <p>Select your desired book by ID, enter your quantity, choose home delivery or shop pickup, and submit your order
+        below.</p>
+    </section>
+
+    <hr>
+
+    <section>
+      <h3>Order Details</h3>
+      <form action="" method="post">
+        <label for="book_id"><strong>Select Book</strong></label><br>
+        <select id="book_id" name="book_id" required>
+          <option value="">-- Choose a Book --</option>
+          <option value="BK-01">Fikir Eske Mekabir (2000 ETB)</option>
+          <option value="BK-02">Oromay (1200 ETB)</option>
+          <option value="BK-03">Dertogada (1500 ETB)</option>
+          <option value="BK-04">Sememen (500 ETB)</option>
+          <option value="BK-05">Ke-Admas Bashager (1000 ETB)</option>
+          <option value="BK-06">Lela Sew (800 ETB)</option>
+        </select><br><br>
+
+        <label for="quantity"><strong>Quantity:</strong></label><br>
+        <input type="number" id="quantity" name="quantity" min="1" max="50" value="1" required>
+        <br><br>
+
+        <label for="fullname"><strong>Full Name:</strong></label><br>
+        <input type="text" id="fullname" name="fullname" required>
+        <br><br>
+
+        <label for="phone"><strong>Phone Number:</strong></label><br>
+        <input type="tel" id="phone" name="phone" placeholder="+251 9..." required>
+        <br><br>
+
+        <label for="email"><strong>Email:</strong></label><br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <strong>Fulfillment Method:</strong><br>
+        <input type="radio" id="delivery" name="fulfillment" value="delivery" checked>
+        <label for="delivery">Home Delivery (Addis Ababa)</label><br>
+        <input type="radio" id="pickup" name="fulfillment" value="pickup">
+        <label for="pickup">Shop Pickup</label>
+        <br><br>
+
+        <label for="address"><strong>Delivery Address / Notes:</strong></label><br>
+        <textarea id="address" name="address" rows="3" cols="40"
+          placeholder="Sub-city, Woreda, or landmark..."></textarea><br><br>
+
+        <label for="payment"><strong>Payment Method:</strong></label><br>
+        <select id="payment" name="payment">
+          <option value="cod">Cash on Delivery / Pickup</option>
+          <option value="telebirr">Telebirr</option>
+          <option value="cbe">CBE Birr / Bank Transfer</option>
+        </select><br><br>
+
+        <button type="reset">Clear Form</button>
+        <button type="submit"><strong>Confirm Order</strong></button>
+      </form>
+    </section>
+  </main>
+
 </body>
 
 </html>
