@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="/">Home</a>
+      <a href="./">Order</a>
+      <a href="/book-submission/">Book Submission</a>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    <section>
+      <h2>Place Your Book Order</h2>
+      <p>Select your desired book by ID, enter your quantity, choose home delivery or shop pickup, and submit your order
+        below.</p>
+    </section>
+
+    <hr>
+
+    <section>
+      <h3>Order Details</h3>
+      <form action="" method="post">
+        <label for="book_id"><strong>Select Book</strong></label><br>
+        <select id="book_id" name="book_id" required>
+          <option value="">-- Choose a Book --</option>
+          <option value="BK-01">Fikir Eske Mekabir (2000 ETB)</option>
+          <option value="BK-02">Oromay (1200 ETB)</option>
+          <option value="BK-03">Dertogada (1500 ETB)</option>
+          <option value="BK-04">Sememen (500 ETB)</option>
+          <option value="BK-05">Ke-Admas Bashager (1000 ETB)</option>
+          <option value="BK-06">Lela Sew (800 ETB)</option>
+        </select><br><br>
+
+        <label for="quantity"><strong>Quantity:</strong></label><br>
+        <input type="number" id="quantity" name="quantity" min="1" max="50" value="1" required>
+        <br><br>
+
+        <label for="fullname"><strong>Full Name:</strong></label><br>
+        <input type="text" id="fullname" name="fullname" required>
+        <br><br>
+
+        <label for="phone"><strong>Phone Number:</strong></label><br>
+        <input type="tel" id="phone" name="phone" placeholder="+251 9..." required>
+        <br><br>
+
+        <label for="email"><strong>Email:</strong></label><br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <strong>Fulfillment Method:</strong><br>
+        <input type="radio" id="delivery" name="fulfillment" value="delivery" checked>
+        <label for="delivery">Home Delivery (Addis Ababa)</label><br>
+        <input type="radio" id="pickup" name="fulfillment" value="pickup">
+        <label for="pickup">Shop Pickup</label>
+        <br><br>
+
+        <label for="address"><strong>Delivery Address / Notes:</strong></label><br>
+        <textarea id="address" name="address" rows="3" cols="40"
+          placeholder="Sub-city, Woreda, or landmark..."></textarea><br><br>
+
+        <label for="payment"><strong>Payment Method:</strong></label><br>
+        <select id="payment" name="payment">
+          <option value="cod">Cash on Delivery / Pickup</option>
+          <option value="telebirr">Telebirr</option>
+          <option value="cbe">CBE Birr / Bank Transfer</option>
+        </select><br><br>
+
+        <button type="reset">Clear Form</button>
+        <button type="submit"><strong>Confirm Order</strong></button>
+      </form>
+    </section>
+  </main>
+
+  <br>
+  <br>
+  <footer>
+    <hr>
+    <table width="100%" cellpadding="8" cellspacing="0">
+      <tr>
+        <td valign="top" width="33%">
+          <h3>E - Books</h3>
+          <p>Your trusted online bookstore for classic and contemporary Ethiopian literature, offering convenient home
+            delivery and shop pickup options.</p>
+        </td>
+        <td valign="top" width="33%">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="order/">Order Books</a></li>
+            <li><a href="book-submission/">Book Submission</a></li>
+            <li><a href="about/">About Us</a></li>
+            <li><a href="contact/">Contact</a></li>
+          </ul>
+        </td>
+        <td valign="top" width="33%">
+          <h4>Store Info</h4>
+          <p>
+            Addis Ababa, Ethiopia<br>
+            Mon – Sat: 8:30 AM – 6:30 PM<br>
+            Email: <a href="mailto:support@ebooks.et
+"> support@ebooks.et
+            </a> <br>
+            Phone: <a href="tel:+251968967755">+251968967755</a>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <hr>
+    <p align="center"><small>&copy; 2026 E - Books. All rights reserved.</small></p>
+  </footer>
+
+</body>
+
+</html>
