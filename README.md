@@ -18,7 +18,7 @@ e-books/
     └── index.html
 
 ```
-### Why this Project stracuter is chosen?
+### Why this Project structure?
 
 I organized each page into its own folder with an index.html file so the site gets clean URLs (like /order/ instead of /order.html), keeps relative links consistent across every subpage
 
